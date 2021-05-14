@@ -110,7 +110,7 @@ var startGame = function() {
   };
   
   // function to end entire game
-  var endGame = function () {}
+  var endGame = function () {   
     window.alert("The game has now ended. Let's see how you did");
 
     //if player is still alive, player wins!
@@ -148,7 +148,7 @@ var startGame = function() {
               playerMoney = playerMoney -7;
             }
             else {
-              window.alert ("You don't have enough money!")''
+              window.alert ("You don't have enough money!");
             }
             break;
           case "UPGRADE":
