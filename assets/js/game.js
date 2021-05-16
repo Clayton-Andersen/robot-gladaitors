@@ -80,7 +80,7 @@ var fight = function (enemy) {
         //leave while() loop since enemy is dead
         break;
       } else {
-        window.alert(enemy.name + " still has" + enemy.health + " health left.");
+        window.alert(enemy.name + " still has " + enemy.health + " health left.");
       }
       //player gets attacked first
     } else {
@@ -186,9 +186,12 @@ var endGame = function () {
 var shop = function () {
   // ask player what they'd like to do
   var shopOptionPrompt = window.prompt(
-    "would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one 'REFILL', 'UPGRADE', or 'LEAVE' to make a choice.");
+    "would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter 1 for REFILL, 2 for UPGRADE, or 3 for LEAVE.");
 
   // convert answer from prompt to actual number
+  shopOptionPrompt = parseInt(shopOptionPrompt);
+
+  //use switch case to carry out action
   switch (shopOptionPrompt) {
     case 1:
       playerInfo.refillHealth();
