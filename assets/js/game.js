@@ -9,7 +9,7 @@ var fightOrSkip = function() {
   // ask player if they'd like to fight or skip using fightOrSkip function
   var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
 
-  // validate prompt answer
+  // conditional recursive function call
 if (promptFight === "" || promptFight === null) {
   window.alert("You need to provide a valid answer! Please try again.");
   return fightOrSkip();
